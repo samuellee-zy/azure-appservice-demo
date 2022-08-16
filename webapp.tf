@@ -49,7 +49,7 @@ resource "azurerm_app_service" "hashi-sam-webAppContApp" {
     
     # Configure Docker Image to load on start
     site_config {
-        linux_fx_version = "DOCKER|microsoft/aci-helloworld:latest"
+        linux_fx_version = "DOCKER|mcr.microsoft.com/azuredocs/aci-helloworld"
         always_on = "true"
     }
 
