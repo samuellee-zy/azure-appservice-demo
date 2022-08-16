@@ -41,7 +41,7 @@ resource "azurerm_app_service_plan" "appServicePlan" {
 }
 
 # Create Azure Web App for Containers in App Service Plan
-resource "azurerm_app_service" "webAppContApp" {
+resource "azurerm_app_service" "hashi-sam-webAppContApp" {
     name = azurerm_resource_group.group.name
     location = azurerm_resource_group.group.location
     resource_group_name = azurerm_resource_group.group.name
