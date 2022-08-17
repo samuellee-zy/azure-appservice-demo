@@ -16,7 +16,7 @@ provider "azurerm" {
 
 # Create new Resource Group
 resource "azurerm_resource_group" "group" {
-    name        = "hashi-sam-sampleWebApp"
+    name        = "demo-hashi-sam-sampleWebApp"
     location    = "westus"    
 }
 
