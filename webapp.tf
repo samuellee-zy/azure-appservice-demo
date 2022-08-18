@@ -16,7 +16,7 @@ provider "azurerm" {
 
 # Create new Resource Group
 resource "azurerm_resource_group" "group" {
-    name        = "hashi-sam-sampleWebApp"
+    name        = "demo-hashi-sam-sampleWebApp"
     location    = "westus"    
 }
 
@@ -41,7 +41,7 @@ resource "azurerm_app_service_plan" "appServicePlan" {
 }
 
 # Create Azure Web App for Containers in App Service Plan
-resource "azurerm_app_service" "hashi-sam-webAppContApp" {
+resource "azurerm_app_service" "demo-hashi-sam-webAppContApp" {
     name = azurerm_resource_group.group.name
     location = azurerm_resource_group.group.location
     resource_group_name = azurerm_resource_group.group.name
